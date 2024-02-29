@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 90%;
+    margin-inline: auto;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0,0.6)), url(../assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navigation{
+    width: 100%;
+    padding: 20px 0 10px 0;
+}
+
+.navigation .box-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .box-navigation .box:nth-child(1){
+    font-size: 38px;
+    color: white;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li{
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a{
+    list-style-type: none;
+    margin-left: 40px;
+    color: white;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a:hover{
+    color: greenyellow;
+}
+
+.navigation .box-navigation .box:nth-child(3){
+    display: none;
+}
+
+/*hero style*/
+header .hero{
+    position: absolute;
+    top: 65%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+header .hero h1{
+    color: rgba(255, 255, 255, 0.685);
+    font-size: 48px;
+    text-align: center;
+}
+
+.WiN {
+    width: 104%;
+    height: 99vh;
+    background-color: white;
+    background-image: url(../assets/Group\ 95atasan\ win\ \(1\).png);
+    background-repeat: no-repeat;
+    position: absolute; /* Menggeser latar belakang ke kiri sejauh 10cm dan ke atas sekitar 15cm */
+    right: 5px;
+}
+
+
+.WiN .box-WiN {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.WiN .box-WiN .box:nth-child(1) h1 {
+    font-size: 45px;
+    padding: 10px;
+    color: black;
+    position: absolute;
+    bottom: 60px; /* Adjusted value */
+    right: 20px;
+    width: calc(100% - 250px);
+}
+
+.WiN .box-WiN .box:nth-child(1) p {
+    line-height: 2;
+    font-size: 35px; /* Increased font size for better visibility */
+    color: black;
+    position: absolute;
+    bottom: -160px; /* Adjusted value */
+    right: 40px;
+    width: calc(100% - 250px);
+}
+
+
+.WiN .box-WiN .box:nth-child(2) img {
+    width: 480px; /* Sesuaikan ukuran gambar */
+    height: auto; /* Menggunakan nilai otomatis agar proporsi gambar terjaga */
+    border-radius: 5px;
+    position: absolute; /* Gunakan absolute positioning untuk mengatur posisi tepat */
+    bottom: -662px; /* Atur posisi gambar di bagian bawah */
+    left: 70px; /* Atur posisi gambar di kiri */
+}
+
+/* Issue Section Style */
+.Issue {
+    width: 100%;
+    height: 150vh;
+    background-color: green;
+    position: relative;
+    top: 1300px;
+}
+
+.Issue .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.Issue .box-Issue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.Issue .box-Issue h1 {
+    font-size: 45px;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    top: 200px; /* Adjusted value */
+    right: 20px;
+    width: calc(100% - 250px);
+}
+
+.Issue .box-Issue p {
+    line-height: 2;
+    font-size: 35px; /* Increased font size for better visibility */
+    color: white;
+    position: absolute;
+    bottom: 200x; /* Adjusted value */
+    right: 40px;
+    width: calc(100% - 250px);
+}
+ 
+.Issue .box-Issue h2 {
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+    position: absolute;
+    bottom: 200px; /* Adjusted value */
+    right: 20px;
+    width: calc(100% - 250px);
+}
+
+.Issue .box-Issue img {
+    width: 180px; /* Force the width to be 80px */
+    height: auto ; /* Ensure aspect ratio is maintained */
+    border-radius: 5px; /* Border radius for rounded corners */
+    position: absolute; /* Positioning */
+    bottom: 100px; /* Distance from bottom */
+    right: 10px; /* Distance from right */
+    z-index: 1; /* Ensure the image is above other content */
+}
+
+/* Join Us Section Style */
+.JoinUs {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    position: relative;
+    top: 1500px;
+}
+
+.JoinUs .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.JoinUs .box-JoinUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.JoinUs .box-JoinUs h1 {
+    font-size: 45px;
+    padding: 10px;
+    color: black;
+}
+
+.JoinUs .box-JoinUs p {
+    line-height: 2;
+    font-size: 35px;
+    color: black;
+}
+
+.JoinUs .box-JoinUs img {
+    width: 480px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Who We Are Section Style */
+.WhoWeAre {
+    width: 100%;
+    height: 100vh;
+    background-color: orange;
+    position: relative;
+    top: 1500px;
+}
+
+.WhoWeAre .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.WhoWeAre .box-WhoWeAre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.WhoWeAre .box-WhoWeAre h1 {
+    font-size: 45px;
+    padding: 10px;
+    color: black;
+}
+
+.WhoWeAre .box-WhoWeAre p {
+    line-height: 2;
+    font-size: 35px;
+    color: black;
+}
+
+.WhoWeAre .box-WhoWeAre img {
+    width: 480px;
+    height: auto;
+    border-radius: 5px;
+}
+@media screen and (max-wid: 990px) {
+    .navigation .box-navigation .box:nth-child(2) {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        background-color: white;
+        width: 250px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        opacity: 0;
+        transition: all;
+    }
+    
+    .navigation .box-navigation .menu-navigation.menu-active{
+        opacity: 1;
+        top: 100px;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul {
+    flex-direction: column;
+    }
+
+    .navigation .box-navigation .box:nth-child(3) {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation .box-navigation .box:nth-child(3) i {
+        font-size: 28px;
+    }
+
+    header .hero h1 {
+        font-size: 34px;
+    }
+}
+
