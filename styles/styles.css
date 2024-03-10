@@ -145,10 +145,10 @@ header .hero h1{
     background-color: #24BA67;
     position: relative;
     top: 1300px;
-    background-image: url(../assets/Group\ 91tgsmph.png ), url(../assets/kanopi.png);
+    background-image: url(../assets/Group\ 91tgsmph.png ), url(../assets/kanopi.png), url(../assets/gabungan.png);
     background-repeat: no-repeat;
-    background-position: right 5% top 60%;
-    background-size: 350px 300px;
+    background-position: right 5% top 60%, top, bottom 550px left 40px;
+    background-size: 450px 400px, 99.9% 25vh, 55% 45vh;
 }
 
 .Issue .box-Issue {
@@ -158,15 +158,30 @@ header .hero h1{
     height: 100%;
 }
 
-.Issue .box-Issue h1 {
-    font-size: 45px;
-    padding: 10px;
+.Issue .box-Issue h3 {
+    line-height: 2;
+    font-size: 35px;
+    font-weight: 100;
+    padding: 15px;
     color: white;
     position: absolute;
-    top: 200px; /* Adjusted value */
-    right: 20px;
+    top: 450px; /* Adjusted value */
+    left: 30px;
     width: calc(100% - 250px);
 }
+
+.Issue .box-Issue h2 {
+    line-height: 2;
+    font-size: 35px;
+    font-weight: 100;
+    padding: 15px;
+    color: white;
+    position: absolute;
+    top: 500px; /* Adjusted value */
+    left: 30px;
+    width: calc(100% - 250px);
+}
+
 
 .Issue .box-Issue .box:nth-child(2) p  {
     line-height: 2;
@@ -178,7 +193,7 @@ header .hero h1{
     text-align: right;
 }
  
-.Issue .box-Issue h2 {
+.Issue .box-Issue h4 {
     font-size: 30px;
     padding: 10px;
     color: black;
